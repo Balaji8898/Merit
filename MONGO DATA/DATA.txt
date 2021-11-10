@@ -1,0 +1,122 @@
+db.RestaurantsProfile.insert({Image:"https://drive.google.com/uc?export=view&id=1Wt1Sn_UWToTwypbr_zHSngMucOcWNpQI",Name:"MyBowl",Rating:"3",Reviews:"56",Cuisine:"North Indian",DeliveryTime:"40 Mins",Veg:"0"})
+
+
+
+
+
+
+[
+    {
+        "Image": "https://drive.google.com/uc?export=view&id=1K81ttyf4mzEB1GLrwV9G1c8Sfin4c0Yx",
+        "Name": "White Kitchen",
+        "Rating": "5",
+        "Reviews": "98",
+        "Cuisine": "Mexican,Indian",
+        "DeliveryTime": "10 Mins",
+        "Veg":"0"
+    },
+     {
+        "Image": "https://drive.google.com/uc?exporrt=view&id=1MZYIsXU_wqTNUL3wHv5HZDd0FnYd0_9O",
+        "Name": "Dosa Hub",
+        "Rating": "4",
+        "Reviews": "25",
+        "Cuisine": "North Indian",
+        "DeliveryTime": "15 Mins",
+        "Veg":"1"
+    },
+    {
+        "Image": "https://drive.google.com/uc?export=view&id=1dY6ZKXOI9CdxG54Q5l06d3A_PLJ24gI2",
+        "Name": "Chennice Food",
+        "Rating": "4",
+        "Reviews": "25",
+        "Cuisine": "North Indian",
+        "DeliveryTime": "45 Mins",
+        "Veg":"0"
+    },
+     {
+        "Image": "https://drive.google.com/uc?export=view&id=1Cq09YrtOirVtEMngDwsV9o2bfW59PaQb",
+        "Name": "The Kitchen Crew",
+        "Rating": "3",
+        "Reviews": "64",
+        "Cuisine": "South Indian",
+        "DeliveryTime": "25 Mins",
+        "Veg":"0"
+    },
+     {
+        "Image": "https://drive.google.com/uc?export=view&id=1qpjdN5OxLa_bF7SPWXrvSYBaslDulomq",
+        "Name": "Donerji",
+        "Rating": "2",
+        "Reviews": "12",
+        "Cuisine": "Lebanese, Turkish",
+        "DeliveryTime": "29 Mins",
+        "Veg":"0"
+    },
+     {
+        "Image": "https://drive.google.com/uc?export=view&id=1eAb7jd5aOcMUvdcurlyjeVsUeYgcmkaG",
+        "Name": "Madras Kitchen",
+        "Rating": "4",
+        "Reviews": "45",
+        "Cuisine": "Turkish",
+        "DeliveryTime": "13 Mins",
+        "Veg":"1"
+    },
+     {
+        "Image": "https://drive.google.com/uc?export=view&id=1cfKERjL8XAxRPb0-X9Qa0Phv--XWYoYW",
+        "Name": "Nolita",
+        "Rating": "2",
+        "Reviews": "79",
+        "Cuisine": "FastFood",
+        "DeliveryTime": "53 Mins",
+        "Veg":"1"
+    },
+     {
+        "Image": "https://drive.google.com/uc?export=view&id=1AiejMiLoJmXJ16CRK9mOG8FIQbnV0PY5",
+        "Name": "Sanjeevanam",
+        "Rating": "3",
+        "Reviews": "36",
+        "Cuisine": "Fast Food, Ice Cream",
+        "DeliveryTime": "38 Mins",
+        "Veg":"0"
+    },
+     {
+        "Image": "https://drive.google.com/uc?export=view&id=1QLXRjAAER9062_QVleWscpcZXTJJ39oa",
+        "Name": "Aliya Tea Zone",
+        "Rating": "4",
+        "Reviews": "63",
+        "Cuisine": "Tea, Fast Food",
+        "DeliveryTime": "43 Mins",
+        "Veg":"0"
+    },
+     {
+        "Image": "https://drive.google.com/uc?export=view&id=19lx2efOyWj9BWo3N3y5nOWenZDipAlnX",
+        "Name": "Waffle Dreams",
+        "Rating": "3",
+        "Reviews": "79",
+        "Cuisine": "Desserts, Beverages",
+        "DeliveryTime": "39 Mins",
+        "Veg":"0"
+    },
+    {
+        "Image": "https://drive.google.com/uc?export=view&id=19lx2efOyWj9BWo3N3y5nOWenZDipAlnX",
+        "Name": "Sweet Truth",
+        "Rating": "5",
+        "Reviews": "97",
+        "Cuisine": "Bakery, Desserts",
+        "DeliveryTime": "63 Mins",
+        "Veg":"1"
+    }
+
+
+]
+
+
+
+
+
+DeltaLaFesti
+
+
+
+
+mongodb+srv://FestiAdmin:DeltaLaFesti@cluster0.g8sv7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
