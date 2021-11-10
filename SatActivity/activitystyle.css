@@ -1,0 +1,271 @@
+.icon{
+    font-size:10px;
+  }
+ul {
+color: rgb(243, 241, 241);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+list-style-type: none;
+margin:0px;
+margin-top: -2px;
+margin-right: -20px;
+padding:0px;
+overflow: hidden;
+background-color: #070707;
+vertical-align: center;
+position: fixed;
+width: 100%;
+
+
+}
+li {
+float: left;
+
+}
+
+li a {
+display:block;
+padding: 30px;
+color: rgb(255, 255, 255);
+text-align: center;
+text-decoration: none;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 100%
+}
+li a:hover {
+background-color: rgba(255, 255, 255, 0.233);
+}
+.header{
+background-image:url("https://cdn2.outdoorphotographer.com/assignments/565225/assignment-312-backlight-silhouettes-jimshoemakerphotography-0-1514435950.jpg");
+background-color: #cccccc;
+height: 100vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+margin: -8px;
+padding: 0px;
+
+}
+.button {
+border: 1px;
+color: black;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+background-color: rgba(148, 138, 138, 0.541);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.styleee{padding: 100px;
+margin: 10px;
+
+}
+marquee{
+font-size: 30px;
+font-weight: 1000;
+color: #000000;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;      
+}
+.icon{
+    font-size:40px;
+    margin: 40px;
+  }
+  .one{
+    text-align:center;
+  }
+  .two{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    display: inline-block;
+    border-width: 20px;
+    border-bottom: 10px solid;
+    border-radius: 120px;
+    border-color: rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+    }
+    .new4 {
+        color: black;
+        border-radius: 5px;
+      }
+    .secondpart{
+                    background-color:#e58e26;
+        height: 120vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin: 0-8px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+      
+      }
+      .a1{display:block;
+        text-align: center;
+        background-color:rgb(3, 3, 3) ;
+    margin:0px;
+    margin-left: -8px;
+    margin-top: 0px;
+    text-align: center;
+    color: blanchedalmond;
+
+width: 101%; }
+    .a2{
+        width:20%;
+       display:inline-block;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+
+      .a3{font-size:70px;
+        ;
+}
+.gallery{
+    margin:10px 50px;
+    display: inline-block;
+}
+.galleryimg{
+    transition: 1s;
+    padding:15px;
+    width:200px;
+    border-radius: 25px;
+}
+.galleryimg:hover{
+   filter:grayscale(100%);
+   transform:scale(1.1);
+}
+
+
+* {
+box-sizing: border-box;
+}
+.column {
+float: left;
+width: 25%;
+padding: 10px;
+}
+
+.column img {
+opacity: 0.8; 
+cursor: pointer; 
+}
+
+.column img:hover {
+opacity: 1;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.container {
+position: relative;
+display: none;
+}
+
+#imgtext {
+position: absolute;
+bottom: 15px;
+left: 15px;
+color: white;
+font-size: 20px;
+}
+
+.closebtn {
+position: absolute;
+top: 10px;
+right: 15px;
+color: white;
+font-size: 35px;
+cursor: pointer;
+}
+    
+    body {
+        background-color: #6ab04c;
+        font-family: Verdana;
+        text-align: center;
+    }
+
+
+    form {
+        background-color: #fff;
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .formfont
+    {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        
+    }
+
+
+    .form-control {
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+
+    .form-control label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .form-control input,
+    .form-control select,
+    .form-control textarea {
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        padding: 10px;
+        display: block;
+        width: 95%;
+    }
+
+    .form-control input[type="radio"],
+    .form-control input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+    }
+
+    button {
+        background-color:#badc58;
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 21px;
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .foot{
+        text-align: center;
+        padding: 3px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+    width: 100%;
+    margin: 0px;
+      }
+      .icon5{
+        font-size:20px;
+      }

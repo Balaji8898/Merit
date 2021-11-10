@@ -1,0 +1,394 @@
+<html>
+    <!-- <div class="first-section">
+    <section class="filter_button">
+        <a href="#"><button class="button" (click)="sortByCuisines()">Cuisines &nbsp; &nbsp; &nbsp; <i class="fas fa-utensils"></i></button></a>
+        <a href="#"><button class="button" (click)="sortByReviews()">Reviews &nbsp;&nbsp;&nbsp; <i class="fas fa-comment-dots"></i>
+            </button></a>
+        <a href="#"><button class="button" (click)="sortByRating()">Rating:4.0 &nbsp; <i class="fas fa-star-half-alt"></i> </button></a>
+
+        <a href="#"><button class="button" (click)="sortByDeliveryTime()">Delivery Time&nbsp;<i class="fas fa-biking"></i> </button></a>
+        
+
+        <div class="veg">
+            <h5>Veg Only</h5>
+        </div>
+    </section>
+
+    <div class="switch_search">
+        <label class="_switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+</div> -->
+
+
+    <label class="head2">
+        <h1>&nbsp;Customer Favorites</h1>
+    </label>
+    <div class="row">
+        <div class="column">
+            <img src="https://drive.google.com/uc?export=view&id=1k_IcywjXfKuMnr7DVdAQZAEnBhhJTibw" alt="Loading"
+                style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://drive.google.com/uc?export=view&id=1blLn-8lzKbIEYn3hMBwTbIsX-XF0UZZe" alt="Loading"
+                style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://drive.google.com/uc?export=view&id=1SylEH5J47GXHrDF7B2YKMYpde4sCjEkY" alt="Loading"
+                style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://drive.google.com/uc?export=view&id=1UwqTRmJik674c4AkKTgikarni45zq0xt" alt="Loading"
+                style="width:100%" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <label class="head2">
+        <h1>&nbsp;Popular Restaurants</h1>
+    </label>
+
+    <div class="all-popular">
+        <div class="responsive1">
+            <div class="gallery">
+                <a target="_blank" href="items.html">
+                    <img src="https://drive.google.com/uc?export=view&id=1rSkb7O2gCc8XPU19k2y0AsV6YiEutHGl"
+                        alt="Loading">
+                </a>
+                <div class="desc">BEST IN Pizza</div>
+            </div>
+        </div>
+        <div class="responsive1">
+            <div class="gallery">
+                <a target="_blank" href="items.html">
+                    <img src="https://drive.google.com/uc?export=view&id=1a5ZkMvqybZ8aNH44FFOFfW5VvHEnRANq"
+                        alt="Loading">
+                </a>
+                <div class="desc">BEST IN FRAPPE</div>
+            </div>
+        </div>
+        <div class="responsive1">
+            <div class="gallery">
+                <a target="_blank" href="items.html">
+                    <img src="https://drive.google.com/uc?export=view&id=1wFi8srjCHqF9O06T3MIK0WrmglJ2avs0"
+                        alt="Loading">
+                </a>
+                <div class="desc">BEST IN BURGERS</div>
+            </div>
+        </div>
+        <div class="responsive1">
+            <div class="gallery">
+                <a target="_blank" href="items.html">
+                    <img src="https://drive.google.com/uc?export=view&id=15ykdV4_TXx_bT3-p6kFBFnLJ7u2nMewz"
+                        alt="Loading">
+                </a>
+                <div class="desc">BEST IN MOMOS</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <label class="head2">
+        <h1>&nbsp;Choose Your Restaurants Here</h1>
+    </label>
+    <br>
+    <br>
+
+    <div class="first-section">
+        <section class="filter_button">
+            <button class="button" (click)="sortByCuisines()">Cuisines &nbsp; &nbsp; &nbsp; <i class="fas fa-utensils"></i></button>
+            <button class="button" (click)="sortByReviews()">Reviews &nbsp;&nbsp;&nbsp; <i class="fas fa-comment-dots"></i>
+                </button>
+            <button class="button" (click)="sortByRating()">Rating:4.0 &nbsp; <i class="fas fa-star-half-alt"></i> </button>
+    
+            <button class="button" (click)="sortByDeliveryTime()">Delivery Time&nbsp;<i class="fas fa-biking"></i> </button>
+            
+    
+            <div class="veg">
+                <h5>Veg Only</h5>
+            </div>
+        </section>
+    
+        <div class="switch_search">
+            <label class="_switch">
+                <input type="checkbox" (change)="filterByVegOnly($event)">
+                <span class="slider"></span>
+            </label>
+        </div>
+    
+    </div>
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="all-restaurants" *ngFor="let R of rest">
+        <div class="responsive">
+            <div class="hotels" >
+                <a target="_blank" href="items.html">
+                    <img [src]="R.Image"
+                        alt="Loading" width="600px" height="600px">
+                </a>
+                <b>
+                    <div class="hotels_name">{{R.Name}}</div>
+                </b>
+
+                <div class="hotels_ratings" [ngSwitch]="R.Rating">
+                    <div *ngSwitchCase="5">&#9733; &#9733; &#9733;&#9733;&#9733;</div>
+                    <div *ngSwitchCase="4">&#9733; &#9733; &#9733;&#9733;&#9734;</div>
+                    <div *ngSwitchCase="3">&#9733; &#9733; &#9733;&#9734;&#9734;</div>
+                    <div *ngSwitchCase="2">&#9733; &#9733; &#9734;&#9734;&#9734;</div>
+                    <div *ngSwitchCase="1">&#9733; &#9734;&#9734;&#9734;&#9734;</div>
+                </div>
+                
+                <div class="hotels_reviews"> ({{R.Reviews}} Reviews) </div>
+                <div class="hotels_desc"><span>{{R.Cuisine}}</span> <span> &#8901; {{R.DeliveryTime}}</span></div>
+            </div>
+        </div>
+        <!-- <div class="responsive">
+            <div class="hotels">
+                <a target="_blank" href="items.html">
+                    <img src="https://drive.google.com/uc?export=view&id=1K81ttyf4mzEB1GLrwV9G1c8Sfin4c0Yx"
+                        alt="Loading" width="600px" height="600px">
+                </a>
+                <b>
+                    <div class="hotels_name">White Kitchen</div>
+                </b>
+                <div class="hotels_ratings"> &#9733; &#9733;&#9734;&#9734;&#9734; (1k Reviews) </div>
+                <div class="hotels_desc"><span>Mexican,Indian</span> <span> &#8901; 20Mins</span></div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="hotels">
+                <a target="_blank" href="items.html">
+                    <img src="https://drive.google.com/uc?exporrt=view&id=1MZYIsXU_wqTNUL3wHv5HZDd0FnYd0_9O"
+                        alt="Loading" width="600px" height="600px">
+                </a>
+                <b>
+                    <div class="hotels_name">Chennice Food</div>
+                </b>
+                <div class="hotels_ratings"> &#9733; &#9733; &#9733;&#9733;&#9733; (5k Reviews) </div>
+                <div class="hotels_desc"><span> North Indian</span> <span> &#8901; 25Mins</span>
+                </div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="hotels">
+                <a target="_blank" href="items.html">
+                    <img src="https://drive.google.com/uc?export=view&id=1dY6ZKXOI9CdxG54Q5l06d3A_PLJ24gI2"
+                        alt="Loading" width="600px" height="600px">
+                </a>
+                <b>
+                    <div class="hotels_name">Dosa Hub</div>
+                </b>
+                <div class="hotels_ratings"> &#9733; &#9733; &#9733;&#9733;&#9733; (5k Reviews) </div>
+                <div class="hotels_desc"><span>South Indian</span> <span> &#8901; 50Mins</span></div>
+            </div>
+        </div>
+
+
+
+
+        <br>
+        <br>
+        <div class="responsive">
+            <div class="hotels">
+                <a target="_blank" href="items.html">
+                    <img src="https://drive.google.com/uc?export=view&id=1Cq09YrtOirVtEMngDwsV9o2bfW59PaQb"
+                        alt="Loading" width="600px" height="600px">
+                </a>
+                <b>
+                    <div class="hotels_name">The Kitchen Crew</div>
+                </b>
+                <div class="hotels_ratings"> &#9733; &#9733; &#9733;&#9733;&#9734; (50 Reviews) </div>
+                <div class="hotels_desc"><span> Kashmiri, Mughlai</span> <span> &#8901; 30Mins</span></div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="hotels">
+                <a target="_blank" href="items.html">
+                    <img src="https://drive.google.com/uc?export=view&id=1qpjdN5OxLa_bF7SPWXrvSYBaslDulomq"
+                        alt="Loading" width="600px" height="600px">
+                </a>
+                <b>
+                    <div class="hotels_name">Donerji</div>
+                </b>
+                <div class="hotels_ratings"> &#9733; &#9733; &#9733;&#9733;&#9733; (34 Reviews) </div>
+                <div class="hotels_desc"><span>Lebanese, Turkish</span> <span> &#8901; 10Mins</span></div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="hotels">
+                <a target="_blank" href="items.html">
+                    <img src="https://drive.google.com/uc?export=view&id=1eAb7jd5aOcMUvdcurlyjeVsUeYgcmkaG"
+                        alt="Loading" width="600px" height="600px">
+                </a>
+                <b>
+                    <div class="hotels_name">Nolita</div>
+                </b>
+                <div class="hotels_ratings"> &#9733; &#9734;&#9734;&#9734;&#9734; (87 Reviews) </div>
+                <div class="hotels_desc"><span>Italian, Pizza</span> <span> &#8901; 40Mins</span></div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="hotels">
+                <a target="_blank" href="items.html">
+                    <img src="https://drive.google.com/uc?export=view&id=1cfKERjL8XAxRPb0-X9Qa0Phv--XWYoYW"
+                        alt="Loading" width="600px" height="600px">
+                </a>
+                <b>
+                    <div class="hotels_name">Madras Kitchen</div>
+                </b>
+                <div class="hotels_ratings"> &#9733; &#9733; &#9733;&#9733;&#9734; (67 Reviews) </div>
+                <div class="hotels_desc"><span>South Indian</span> <span> &#8901; 40Mins</span></div>
+            </div>
+        </div>
+
+
+
+        <br>
+        <br>
+        <div class="responsive">
+            <div class="hotels">
+                <a target="_blank" href="items.html">
+                    <img src="https://drive.google.com/uc?export=view&id=1AiejMiLoJmXJ16CRK9mOG8FIQbnV0PY5"
+                        alt="Loading" width="600px" height="600px">
+                </a>
+                <b>
+                    <div class="hotels_name">Sanjeevanam</div>
+                </b>
+                <div class="hotels_ratings"> &#9733; &#9733;&#9734;&#9734;&#9734; (2k Reviews) </div>
+                <div class="hotels_desc"><span>Fast Food, Ice Cream</span> <span> &#8901; 10Mins</span>
+                </div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="hotels">
+                <a target="_blank" href="items.html">
+                    <img src="https://drive.google.com/uc?export=view&id=1QLXRjAAER9062_QVleWscpcZXTJJ39oa"
+                        alt="Loading" width="600px" height="600px">
+                </a>
+                <b>
+                    <div class="hotels_name">Aliya Tea Zone</div>
+                </b>
+                <div class="hotels_ratings"> &#9733; &#9733; &#9733;&#9734;&#9734; (1k Reviews) </div>
+                <div class="hotels_desc"><span>Tea, Fast Food</span> <span> &#8901; 18Mins</span></div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="hotels">
+                <a target="_blank" href="items.html">
+                    <img src="https://drive.google.com/uc?export=view&id=19lx2efOyWj9BWo3N3y5nOWenZDipAlnX"
+                        alt="Loading" width="600px" height="600px">
+                </a>
+                <b>
+                    <div class="hotels_name">Waffle Dreams</div>
+                </b>
+                <div class="hotels_ratings"> &#9733; &#9733; &#9733;&#9733;&#9733; (16k Reviews) </div>
+                <div class="hotels_desc"><span>Desserts, Beverages</span> <span> &#8901; 25Mins</span>
+                </div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="hotels">
+                <a target="_blank" href="items.html">
+                    <img src="https://drive.google.com/uc?export=view&id=11rOaC4LDcTZHMVFxzcdAZiO2nffeIu3H"
+                        alt="Loading" width="600px" height="600px">
+                </a>
+                <b>
+                    <div class="hotels_name">Sweet Truth</div>
+                </b>
+                <div class="hotels_ratings"> &#9733; &#9733; &#9733;&#9733;&#9734; (3k Reviews) </div>
+                <div class="hotels_desc"><span>Bakery, Desserts</span> <span> &#8901; 40Mins</span></div>
+            </div>
+        </div> -->
+    </div>
+
+
+
+
+
+
+
+    <div class="navbar">
+        <a href="#" class="active">1</a>
+        <a href="#"(click)="sortByDeliveryTime()">2</a> 
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <label class="head2">
+        <h1>Food delivery from best restaurants</h1>
+    </label>
+    <label class="cate"><p>La Festi helps you find and order food from wherever you are.
+        How it works: you type in an address, we tell you the restaurants that deliver to that location.
+        Want to be more specific? Search by cuisine, restaurant name or menu item. We'll filter your results
+        accordingly.
+        When you find what you're looking for, you can place your order online or by phone, free of charge.
+        Oh, and we also give you access to reviews, coupons, special deals and a 24/7 customer care team that
+        tracks each order and m
+        akes sure you get exactly what you want.</p>
+    </label>
+
+    <br>
+
+    <label class="head2">
+        <h1>Explore the best restaurants in Chennai from your comfort zone</h1>
+    </label>
+    <label class="cate">
+        <p>Order food & beverages online from restaurants near & around you. We deliver food from your neighborhood local joints, 
+            your favorite cafes, luxurious & elite restaurants in your area. Exciting bit? The meals you love, delivered with care. You want 
+            it? We get it.We place no minimum order restrictions! Order in as little (or as much) as you?d like. We?ll Feast it to you!</p>
+    </label>
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>  -->
+
+
+
+
+</html>
